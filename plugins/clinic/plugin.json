@@ -1,0 +1,15 @@
+{
+  "name": "clinic",
+  "description": "The clinic domain: practitioners, patients, rooms, appointments and the day metrics, saved as JSON in the app data home.",
+  "requires": [],
+  "inject": [
+    "appInstance"
+  ],
+  "provides": [
+    "clinic"
+  ],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: clinic` / `name: clinic` before the page rows in blend.yaml"
+}

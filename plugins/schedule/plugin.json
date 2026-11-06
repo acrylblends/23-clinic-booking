@@ -1,0 +1,15 @@
+{
+  "name": "schedule",
+  "description": "The appointment daybook at /: metrics, location and practitioner filters, three clinician columns and the detail panel.",
+  "requires": [],
+  "inject": [
+    "clinic",
+    "shell",
+    "router"
+  ],
+  "provides": [],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: schedule` / `name: schedule` after the shell row in blend.yaml"
+}

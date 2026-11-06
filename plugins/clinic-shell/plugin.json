@@ -1,0 +1,16 @@
+{
+  "name": "clinic-shell",
+  "description": "The Willow Clinic shell: the clinical navigation, the administration links and the content column.",
+  "requires": [],
+  "inject": [
+    "clinic",
+    "router"
+  ],
+  "provides": [
+    "shell"
+  ],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: clinic-shell` / `name: clinic-shell` after the clinic row in blend.yaml"
+}

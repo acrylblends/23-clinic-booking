@@ -1,0 +1,15 @@
+{
+  "name": "admin",
+  "description": "Administration at /reports and /settings: the day metrics and the schedule hours.",
+  "requires": [],
+  "inject": [
+    "clinic",
+    "shell",
+    "router"
+  ],
+  "provides": [],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: admin` / `name: admin` after the directory row in blend.yaml"
+}

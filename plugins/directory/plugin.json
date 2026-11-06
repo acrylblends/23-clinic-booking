@@ -1,0 +1,15 @@
+{
+  "name": "directory",
+  "description": "Directory at /patients, /practitioners and /rooms: the clinic people and spaces with their records.",
+  "requires": [],
+  "inject": [
+    "clinic",
+    "shell",
+    "router"
+  ],
+  "provides": [],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: directory` / `name: directory` after the appointments row in blend.yaml"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "appointments",
+  "description": "Appointments: the new form, one appointment detail, reschedule and the status changes.",
+  "requires": [],
+  "inject": [
+    "clinic",
+    "shell",
+    "router"
+  ],
+  "provides": [],
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "mount": "a row `- id: appointments` / `name: appointments` after the schedule row in blend.yaml"
+}

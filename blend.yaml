@@ -1,0 +1,39 @@
+apiVersion: blends.acryl.dev/v1alpha1
+kind: Blueprint
+metadata:
+  id: acrylblends.clinic-booking
+  name: "Clinic Booking"
+  version: 0.1.0
+  category: healthcare
+  description: "A practitioner daybook: 18 appointments on a Tuesday across three clinicians and four rooms, with location and practitioner filters, a detail panel, check-in, reschedule and create flows, plus patients, rooms, reports and settings."
+  license: MIT
+  visibility: public
+spec:
+  runtime: cordis
+  parameters:
+    hostname: { type: string, default: 127.0.0.1 }
+  rows:
+    - id: router
+      name: acryl-router
+    - id: home
+      name: home
+    - id: clinic
+      name: clinic
+    - id: clinic-shell
+      name: clinic-shell
+    - id: schedule
+      name: schedule
+    - id: appointments
+      name: appointments
+    - id: directory
+      name: directory
+    - id: admin
+      name: admin
+    - id: extensions
+      name: extensions
+    - id: server
+      name: acryl-node-server
+      config:
+        hostname: "{{parameters.hostname}}"
+    - id: acryl-door
+      name: acryl-door
